@@ -1,0 +1,67 @@
+name: Build & Release
+
+# Manually triggered. Builds Inset from the private source repo and publishes
+# installers to THIS repo's Releases (as a draft for review).
+#
+# One-time setup required:
+#   1. Create a fine-grained Personal Access Token with READ access to the
+#      private source repo's "Contents" (github.com/settings/tokens).
+#   2. Add it to this repo as a secret named SOURCE_REPO_TOKEN
+#      (Settings → Secrets and variables → Actions → New repository secret).
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Release tag (e.g. v0.1.0)"
+        required: true
+
+jobs:
+  build:
+    permissions:
+      contents: write
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - platform: windows-latest
+          - platform: macos-latest
+          - platform: ubuntu-22.04
+    runs-on: ${{ matrix.platform }}
+    steps:
+      - name: Check out private source
+        uses: actions/checkout@v4
+        with:
+          repository: kaislate/inset
+          token: ${{ secrets.SOURCE_REPO_TOKEN }}
+          path: source
+
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Cache Rust build
+        uses: swatinem/rust-cache@v2
+        with:
+          workspaces: source/src-tauri -> target
+
+      - name: Install Linux dependencies
+        if: matrix.platform == 'ubuntu-22.04'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            libwebkit2gtk-4.1-dev \
+            libayatana-appindicator3-dev \
+            librsvg2-dev \
+            patchelf \
+            libxdo-dev
+
+      - name: Build and publish release
+        uses: tauri-apps/tauri-action@v0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          projectPath: source
+          tagName: ${{ github.event.inputs.version }}
+          releaseName: "Inset ${{ github.event.inputs.version }}"
+          releaseDraft: true
+          prerelease: false

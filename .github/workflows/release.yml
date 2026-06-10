@@ -1,6 +1,6 @@
 name: Build & Release
 
-# Manually triggered. Builds Inset from the private source repo and publishes
+# Manually triggered. Builds Doom Scroll from the private source repo and publishes
 # installers to THIS repo's Releases (as a draft for review).
 #
 # One-time setup required:
@@ -64,6 +64,6 @@ jobs:
         with:
           projectPath: source
           tagName: ${{ github.event.inputs.version }}
-          releaseName: "Inset ${{ github.event.inputs.version }}"
+          releaseName: "Doom Scroll ${{ github.event.inputs.version }}"
           releaseDraft: true
           prerelease: false

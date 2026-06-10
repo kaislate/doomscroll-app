@@ -33,6 +33,12 @@ Doom Scroll sits quietly on your desktop: a transparent, rounded, neumorphic pan
 
 ## ✨ Features
 
+### 🌀 Doom Meter *(new)*
+- A floating meter beside the window that **fills the more you scroll** — your own doomscroll gauge.
+- **Per-site**: each feed tracks its own doom; the meter shows whichever you're viewing.
+- **Persists** across restarts and **resets each day**. Fill ramps green → amber → red, and the 💀 ignites at 100%.
+- Follows the window as you move it; toggle it off anytime in Settings.
+
 ### 🌐 Many feeds, one tiny frame
 - Curated sites built in: **Facebook**, **X**, **Reddit**, and **eBay**.
 - Flip between them with the **carousel arrows** — a soft site-name pill flashes as you switch (or pin it on permanently).
@@ -118,6 +124,13 @@ After your first install, you won't need this page again — Doom Scroll keeps i
       <sub><b>Per-site controls</b> — volume, zoom &amp; dark mode for each feed</sub>
     </td>
   </tr>
+  <tr>
+    <td width="50%" align="center">
+      <img src="docs/screenshot-doom.png" alt="Doom Meter beside the window"><br>
+      <sub><b>Doom Meter</b> — fills as you doomscroll (per-site, resets daily)</sub>
+    </td>
+    <td width="50%" align="center"></td>
+  </tr>
 </table>
 
 ---
@@ -166,6 +179,8 @@ After your first install, you won't need this page again — Doom Scroll keeps i
 ## 💬 Beta & feedback
 
 This is an early Beta — expect rough edges, and please share what you find. Bug reports, feature ideas, and screenshots are all welcome on the **[Issues](../../issues)** page. 🙏
+
+See the **[Changelog](CHANGELOG.md)** for what's new in each release.
 
 ---
 

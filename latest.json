@@ -1,0 +1,43 @@
+{
+  "version": "0.4.3",
+  "notes": "### Added\n- **\"What's new\" in the update popup** — when an update is available, expand the\n  banner to read that version's changelog right there, no browser needed.\n\n### Changed\n- The update banner now **spans the content area** and **slides down** into view from\n  the top, instead of floating as a small centered pill.\n\n### Fixed\n- The **Doom Meter no longer floats over other apps** — it now shows only while Doom\n  Scroll is the foreground window (or when the window is pinned), like the main window.",
+  "pub_date": "2026-06-10T08:48:08.970Z",
+  "platforms": {
+    "darwin-aarch64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTmppMEdTOG1wT1FlMjVteDg3UkpCczNLa3QzV2w1bFc5RzR1dEJ4bmR4YnhIZnRoTy9WR2JHRlhDN2VsWUdTQWx5aEM3OE11VUp3SWYyczlYMnJ5ZjdrNllDRG1iV3djPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxMDgxMTg3CWZpbGU6RG9vbSBTY3JvbGwuYXBwLnRhci5negpYMzBBenFCclYvb05JemxjSGxPbDc4eXdOUC8wclFKdUFYMjlOd0pRTFJQQ1VYZnh5am5NNWN5QnVJeW5OYy9kMzhLTlIxd3BKbTYvVHlxVU8ycnlEQT09Cg==",
+      "url": "https://github.com/kaislate/doomscroll-app/releases/download/v0.4.3/Doom.Scroll_aarch64.app.tar.gz"
+    },
+    "darwin-aarch64-app": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTmppMEdTOG1wT1FlMjVteDg3UkpCczNLa3QzV2w1bFc5RzR1dEJ4bmR4YnhIZnRoTy9WR2JHRlhDN2VsWUdTQWx5aEM3OE11VUp3SWYyczlYMnJ5ZjdrNllDRG1iV3djPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxMDgxMTg3CWZpbGU6RG9vbSBTY3JvbGwuYXBwLnRhci5negpYMzBBenFCclYvb05JemxjSGxPbDc4eXdOUC8wclFKdUFYMjlOd0pRTFJQQ1VYZnh5am5NNWN5QnVJeW5OYy9kMzhLTlIxd3BKbTYvVHlxVU8ycnlEQT09Cg==",
+      "url": "https://github.com/kaislate/doomscroll-app/releases/download/v0.4.3/Doom.Scroll_aarch64.app.tar.gz"
+    },
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTmppMEdTOG1wT1lNVHhSdEZBRDVUc2RiUEI0ajFScUR2YUhxMUFYTlVuUUNpdC9CWndwM1IvUDYrQjNlRHhTVTRaRERudjR4WUVyaWVuL0ZZZzRzUTlwbldvMmtwWEFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxMDgxMjIyCWZpbGU6RG9vbSBTY3JvbGxfMC40LjNfeDY0X2VuLVVTLm1zaQprNlROTHhYd0U3b05NL0RtZlJXakxKTGk0NzkzOEU3T3RpUjJheHR4Q1VSQzBGcDVEQmtIUGVyaG1oVW9ZRkxCdWFEU1pWSDQvRjhKZUpoM3JIZ1ZEQT09Cg==",
+      "url": "https://github.com/kaislate/doomscroll-app/releases/download/v0.4.3/Doom.Scroll_0.4.3_x64_en-US.msi"
+    },
+    "windows-x86_64-msi": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTmppMEdTOG1wT1lNVHhSdEZBRDVUc2RiUEI0ajFScUR2YUhxMUFYTlVuUUNpdC9CWndwM1IvUDYrQjNlRHhTVTRaRERudjR4WUVyaWVuL0ZZZzRzUTlwbldvMmtwWEFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxMDgxMjIyCWZpbGU6RG9vbSBTY3JvbGxfMC40LjNfeDY0X2VuLVVTLm1zaQprNlROTHhYd0U3b05NL0RtZlJXakxKTGk0NzkzOEU3T3RpUjJheHR4Q1VSQzBGcDVEQmtIUGVyaG1oVW9ZRkxCdWFEU1pWSDQvRjhKZUpoM3JIZ1ZEQT09Cg==",
+      "url": "https://github.com/kaislate/doomscroll-app/releases/download/v0.4.3/Doom.Scroll_0.4.3_x64_en-US.msi"
+    },
+    "windows-x86_64-nsis": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTmppMEdTOG1wT1c4SmNvdkFkS1lmZFpIdllrMktsN3NJS0ZRMkdNV1c2NlBxZjZ3Q2dCNnFzU1laYWkxUk0zSXFadFhybGtOWGZBUmYzUUgrdEhtTi9jWG9nQXRYanc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxMDgxMjIyCWZpbGU6RG9vbSBTY3JvbGxfMC40LjNfeDY0LXNldHVwLmV4ZQpXN0ZQem5VKzZsN0Z6Wm4zdS90WXNuUk8zZ1Y5T2FZQ2lNV3p5eFk2WHNJRkErVUQ2eitFdE5sWXUrTDQyS1ExUURxaDRFVGlvTWkyQVp3Ly9FVUJDZz09Cg==",
+      "url": "https://github.com/kaislate/doomscroll-app/releases/download/v0.4.3/Doom.Scroll_0.4.3_x64-setup.exe"
+    },
+    "linux-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTmppMEdTOG1wT1ZlckZ2dUhyV0diakMrdzhmb0dKbmxuMEN0RkVkL1c5M0hBajN2RFMyWU5MZlNESTF6NytVcW1WRnhxVTlSektTZTlWbGgyMDRYK0RaVmZyZUpDalFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxMDgxMjgxCWZpbGU6RG9vbSBTY3JvbGxfMC40LjNfYW1kNjQuQXBwSW1hZ2UKeE9GVDZ4enBGd1l1SFJVNmZWbXVKVGFhamFHcjdDb0RoYm0yTENUYmNKZmdVRmVPUElZYVVzdkw5bEFmdU9tSGc2dDFkaXZsVEp0T2MraU81UGdzREE9PQo=",
+      "url": "https://github.com/kaislate/doomscroll-app/releases/download/v0.4.3/Doom.Scroll_0.4.3_amd64.AppImage"
+    },
+    "linux-x86_64-appimage": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTmppMEdTOG1wT1ZlckZ2dUhyV0diakMrdzhmb0dKbmxuMEN0RkVkL1c5M0hBajN2RFMyWU5MZlNESTF6NytVcW1WRnhxVTlSektTZTlWbGgyMDRYK0RaVmZyZUpDalFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxMDgxMjgxCWZpbGU6RG9vbSBTY3JvbGxfMC40LjNfYW1kNjQuQXBwSW1hZ2UKeE9GVDZ4enBGd1l1SFJVNmZWbXVKVGFhamFHcjdDb0RoYm0yTENUYmNKZmdVRmVPUElZYVVzdkw5bEFmdU9tSGc2dDFkaXZsVEp0T2MraU81UGdzREE9PQo=",
+      "url": "https://github.com/kaislate/doomscroll-app/releases/download/v0.4.3/Doom.Scroll_0.4.3_amd64.AppImage"
+    },
+    "linux-x86_64-deb": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTmppMEdTOG1wT2VRNHc1eHdvUjdUVzRDMFBsYnk3cmhMZnZTSkE1dWJ3RUgyQU5HYXlEQnFUclU2UFpEWUtWa3hTTWZ6L0ZkN01HaDIxbTVXR0F0dVJqZXBZNlYzVmdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxMDgxMjgxCWZpbGU6RG9vbSBTY3JvbGxfMC40LjNfYW1kNjQuZGViCkRXZ3oyOEI0bWkxcmZMWjQ0RU5Kck5jZ2hYeEFtQmZHL0hpZENLUTd5VkdmS0w2KzU2a0lXelphR2ZJMS93emVoRWJsYUlDYXJyN0JNMTlpWkNVWUFBPT0K",
+      "url": "https://github.com/kaislate/doomscroll-app/releases/download/v0.4.3/Doom.Scroll_0.4.3_amd64.deb"
+    },
+    "linux-x86_64-rpm": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRTmppMEdTOG1wT1lyRXlrWnl6cHpOTzNQb2pxME5Ha2J3eWlCcGpsdDgwVjYrcVdTVzRuL3hYd09CMndXaCtNNk9Va1FVNDd0RjJqb3JLZFZ0OWZ1UGZDSTVvRThMTXdBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxMDgxMjgxCWZpbGU6RG9vbSBTY3JvbGwtMC40LjMtMS54ODZfNjQucnBtCklpQ21GbVI4em5kZm9Yd1ZTK1Zxd09DQlRnK1BPcE5TT2Rzb1V4c3p6bG91R2c3SDZTU0lxUjYvc2VDV1ZaUmR4YTZNMzhrMnI1eTJvUVhBTkxobEJ3PT0K",
+      "url": "https://github.com/kaislate/doomscroll-app/releases/download/v0.4.3/Doom.Scroll-0.4.3-1.x86_64.rpm"
+    }
+  }
+}

@@ -2,6 +2,20 @@
 
 All notable changes to **Doom Scroll**. This project is in Beta. Dates are release dates.
 
+## 0.4.3 — 2026-06-10
+
+### Added
+- **"What's new" in the update popup** — when an update is available, expand the
+  banner to read that version's changelog right there, no browser needed.
+
+### Changed
+- The update banner now **spans the content area** and **slides down** into view from
+  the top, instead of floating as a small centered pill.
+
+### Fixed
+- The **Doom Meter no longer floats over other apps** — it now shows only while Doom
+  Scroll is the foreground window (or when the window is pinned), like the main window.
+
 ## 0.4.2 — 2026-06-10
 
 ### Changed

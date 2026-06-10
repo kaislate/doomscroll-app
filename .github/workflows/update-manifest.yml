@@ -1,7 +1,9 @@
 name: Publish updater manifest
 
 # After a release is published (its assets are public), copy its latest.json onto
-# the `updater` branch, which the app reads via raw.githubusercontent.com.
+# the `updater` branch, which the app reads via raw.githubusercontent.com. Before
+# publishing we inject the version's CHANGELOG section into the manifest's `notes`
+# field so the in-app "What's new" panel has something to show.
 on:
   release:
     types: [published]
@@ -13,6 +15,11 @@ jobs:
   manifest:
     runs-on: ubuntu-latest
     steps:
+      - name: Check out repo (for CHANGELOG.md)
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
       - name: Download latest.json from the published release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -22,6 +29,29 @@ jobs:
           gh release download "${{ github.event.release.tag_name }}" \
             --repo "${{ github.repository }}" \
             --pattern latest.json --dir out --clobber
+
+      - name: Inject the version's CHANGELOG section into notes
+        run: |
+          set -e
+          TAG="${{ github.event.release.tag_name }}"
+          VER="${TAG#v}"
+          # Extract the lines under "## <version> …" up to (not including) the next
+          # "## " header. index(...)==1 anchors the match to the start of the line.
+          NOTES="$(awk -v ver="$VER" '
+            index($0, "## " ver " ") == 1 { found=1; next }
+            found && /^## / { exit }
+            found { print }
+          ' CHANGELOG.md)"
+          # Trim leading/trailing blank lines.
+          NOTES="$(printf '%s\n' "$NOTES" | sed -e '/./,$!d' | tac | sed -e '/./,$!d' | tac)"
+          if [ -z "$NOTES" ]; then
+            echo "No CHANGELOG section found for $VER — leaving notes untouched."
+          else
+            echo "Injecting notes for $VER:"
+            printf '%s\n' "$NOTES"
+            jq --arg n "$NOTES" '.notes = $n' out/latest.json > out/latest.json.tmp
+            mv out/latest.json.tmp out/latest.json
+          fi
 
       - name: Publish to the updater branch
         run: |

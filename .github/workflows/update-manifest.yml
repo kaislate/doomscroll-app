@@ -1,0 +1,38 @@
+name: Publish updater manifest
+
+# After a release is published (its assets are public), copy its latest.json onto
+# the `updater` branch, which the app reads via raw.githubusercontent.com.
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  manifest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download latest.json from the published release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -e
+          mkdir out
+          gh release download "${{ github.event.release.tag_name }}" \
+            --repo "${{ github.repository }}" \
+            --pattern latest.json --dir out --clobber
+
+      - name: Publish to the updater branch
+        run: |
+          set -e
+          mkdir repo && cd repo
+          git init -q
+          git remote add origin "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -q --orphan updater
+          cp ../out/latest.json latest.json
+          git add latest.json
+          git commit -q -m "Update manifest for ${{ github.event.release.tag_name }}"
+          git push -f origin updater

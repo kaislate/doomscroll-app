@@ -1,6 +1,8 @@
 <div align="center">
 
-# 🪟 Inset
+<img src="docs/logo.png" width="132" alt="Inset logo">
+
+# Inset
 
 ### Your favorite feeds, *inset* into the desktop.
 
@@ -23,10 +25,9 @@ A borderless, chromeless desktop widget that nests web feeds — Facebook, X, Re
 
 Inset sits quietly on your desktop: a transparent, rounded, neumorphic panel holding a live web feed. Move it, resize it, dim it, pin it on top, flip it to dark mode, run several feeds side-by-side, or melt the frame away entirely for an edge-to-edge view. It feels less like an app window and more like a little window *into* the desktop itself.
 
-<!--
-  📸 Drop a hero screenshot here for maximum eye-candy:
-  <div align="center"><img src="docs/screenshot.png" width="460" alt="Inset on the desktop"></div>
--->
+<div align="center">
+  <img src="docs/screenshot-window.png" width="420" alt="Inset framing a Reddit feed on the desktop">
+</div>
 
 ---
 
@@ -91,6 +92,33 @@ Grab the newest build from the **[Releases page](../../releases)**:
 > *(Update packages **are** signed with Inset's own key and verified by the app — this notice is only about the OS-level installer signature.)*
 
 After your first install, you won't need this page again — Inset keeps itself up to date. ✅
+
+---
+
+## 📸 Screenshots
+
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <img src="docs/screenshot-window.png" alt="Inset framing a feed"><br>
+      <sub><b>The neumorphic frame</b> — a feed nested into the desktop</sub>
+    </td>
+    <td width="50%" align="center">
+      <img src="docs/screenshot-feed.png" alt="A live feed inside Inset"><br>
+      <sub><b>Live feeds</b> — the real site, running right in the panel</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <img src="docs/screenshot-settings.png" alt="Inset settings panel"><br>
+      <sub><b>Settings</b> — opacity, theme, scrolling, startup &amp; updates</sub>
+    </td>
+    <td width="50%" align="center">
+      <img src="docs/screenshot-sites.png" alt="Inset per-site controls"><br>
+      <sub><b>Per-site controls</b> — volume, zoom &amp; dark mode for each feed</sub>
+    </td>
+  </tr>
+</table>
 
 ---
 

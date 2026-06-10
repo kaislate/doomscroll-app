@@ -1,39 +1,150 @@
 <div align="center">
 
-# Inset
+# 🪟 Inset
 
-### A borderless, chromeless desktop widget that nests your Facebook feed into the desktop
+### Your favorite feeds, *inset* into the desktop.
 
-![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-2b7489)
+A borderless, chromeless desktop widget that nests web feeds — Facebook, X, Reddit, eBay — inside a soft neumorphic frame, so they read as **part of your desktop** rather than yet another window on top of it.
+
+<br>
+
+![Platform](https://img.shields.io/badge/Windows%20·%20macOS%20·%20Linux-2b7489?style=for-the-badge)
+![Release](https://img.shields.io/github/v/release/kaislate/inset-app?include_prereleases&label=beta&style=for-the-badge&color=8a63d2)
+![Auto-update](https://img.shields.io/badge/auto--update-enabled-1877f2?style=for-the-badge)
+
+**[⬇️ Download the latest Beta](../../releases)**
 
 </div>
 
 ---
 
-**Inset** sits quietly on your desktop — a transparent, chromeless window that holds your Facebook feed inside a soft neumorphic frame, so it reads as part of the desktop rather than a window on top of it. Move it, resize it, pin it on top, dim it, switch it to dark mode, and jump to the top of the feed with one click.
+> [!NOTE]
+> **Inset is in Beta.** It updates itself — install once and new versions arrive automatically (with your OK). 🎉
 
-## Download
-
-Get the latest installer from the **[Releases](../../releases)** page:
-
-| OS | File |
-|---|---|
-| Windows | `.msi` or `.exe` |
-| macOS | `.dmg` |
-| Linux | `.AppImage` or `.deb` |
-
-> Installers are not yet code-signed, so Windows SmartScreen / macOS Gatekeeper may warn on first launch. Choose "More info → Run anyway" (Windows) or right-click → Open (macOS).
+Inset sits quietly on your desktop: a transparent, rounded, neumorphic panel holding a live web feed. Move it, resize it, dim it, pin it on top, flip it to dark mode, run several feeds side-by-side, or melt the frame away entirely for an edge-to-edge view. It feels less like an app window and more like a little window *into* the desktop itself.
 
 <!--
-  Add a screenshot here once you have one:
-  <div align="center"><img src="docs/screenshot.png" width="440" alt="Inset"></div>
+  📸 Drop a hero screenshot here for maximum eye-candy:
+  <div align="center"><img src="docs/screenshot.png" width="460" alt="Inset on the desktop"></div>
 -->
-
-## Setup notes
-
-- On first launch you'll log into Facebook; the session persists.
-- For dark mode to also darken the feed (Windows), set Facebook's own theme to **Automatic** (Facebook → Settings & privacy → Display & accessibility → Dark mode → Automatic).
 
 ---
 
-<sub>The source code is maintained in a private repository. Releases here are built automatically from that source.</sub>
+## ✨ Features
+
+### 🌐 Many feeds, one tiny frame
+- Curated sites built in: **Facebook**, **X**, **Reddit**, and **eBay**.
+- Flip between them with the **carousel arrows** — a soft site-name pill flashes as you switch (or pin it on permanently).
+- **Enable, disable, and reorder** sites in the Sites panel.
+- Pick which site **opens on startup** — or just resume your last.
+
+### 🔲 Multi-site display *(experimental)*
+- Show **2, 3, or 4 feeds side-by-side** in one panel.
+- The window grows to fit and scales each column down gracefully (capped so it never sprawls past your screen).
+
+### 🌑 Dark mode done *right*
+- One toggle theme for the whole app — chrome and feeds.
+- **Per-site dark control**: `Auto` (follow the site's native theme), `Force` (clean Chromium force-dark — proper dark backgrounds while photos keep their real colors, à la Opera GX), or `Off`.
+
+### 🔍 Per-site zoom
+- A zoom slider for **each** site (0.5×–1.5×) — shrink a busy feed, enlarge a cramped one. Remembered per site.
+
+### 🔊 Sound, your way
+- A **volume slider per site**, plus a one-click **global mute** in the title strip. Silence autoplay without muting your whole system.
+
+### 🖱️ Scrolling that feels native
+- **Touch / drag scrolling** for trackpads and touchscreens.
+- Optional **scroll acceleration** with smooth easing — and it's smart enough to *not* hijack nested scroll areas (like Facebook's comment pop-ups).
+- Fine-tune **smoothness** and **distance** in advanced settings.
+
+### 👻 Borderless & immersive
+- **Immersive mode** melts the frame for a true edge-to-edge feed — a faint pill is the only handle to drag or exit.
+- **Hover-reveal controls** keep the panel clean until you need it (or pin the buttons on).
+
+### 🎚️ Blend it into your desktop
+- **Frame opacity** and **whole-window opacity** sliders to make Inset as present — or as ghostly — as you like.
+- **Pin on top** 📌, **lock position & size** 🔒, and neumorphic soft-shadow styling throughout.
+
+### 🔄 Automatic updates *(new in Beta)*
+- Inset checks for new versions on launch and offers a tidy **Install / Later** prompt — or check anytime from **Settings → Updates**.
+- Updates are **cryptographically signed** and verified before they're applied; the app downloads, installs, and relaunches itself.
+
+### 🔒 Private by design
+- Inset is a thin frame around the **real** sites running in a local WebView — no middleman, no proxy, no account.
+- Your logins live in Inset's own local browser profile and simply persist between launches.
+
+---
+
+## ⬇️ Download & Install
+
+Grab the newest build from the **[Releases page](../../releases)**:
+
+| 🖥️ OS | 📦 Files |
+|---|---|
+| **Windows** | `Inset_x.y.z_x64-setup.exe` (installer) · `Inset_x.y.z_x64_en-US.msi` |
+| **macOS** | `Inset_x.y.z_aarch64.dmg` (Apple Silicon) |
+| **Linux** | `.AppImage` · `.deb` · `.rpm` |
+
+> [!IMPORTANT]
+> Installers aren't code-signed for the OS yet, so **Windows SmartScreen** or **macOS Gatekeeper** may warn on first launch.
+> Windows: **More info → Run anyway**. macOS: **right-click → Open**.
+> *(Update packages **are** signed with Inset's own key and verified by the app — this notice is only about the OS-level installer signature.)*
+
+After your first install, you won't need this page again — Inset keeps itself up to date. ✅
+
+---
+
+## 🚀 Quick start
+
+1. **Launch Inset** — a neumorphic panel appears with your starting feed.
+2. **Log in** to a site once; the session persists.
+3. **Hover** the panel to reveal the control strip:
+
+| Control | What it does |
+|---|---|
+| ◀ ▶ | Switch between feeds |
+| 👤 *(Sites)* | Enable/reorder sites, per-site zoom · dark · volume |
+| 🔼 | Scroll to top (click again to return) |
+| 🔇 | Mute all audio |
+| 📌 | Always on top |
+| 🔒 | Lock position & size |
+| ⛶ | Immersive (borderless) mode |
+| ⚠️ | Experimental features (multi-site) |
+| ⚙️ | Settings |
+
+4. **Drag** the top strip to move it, grab an edge/corner to resize, and tweak the rest in **Settings**.
+
+---
+
+## ⚙️ Settings at a glance
+
+<details>
+<summary><b>Everything you can tune</b> (click to expand)</summary>
+
+<br>
+
+- **Appearance** — frame opacity, window opacity, dark mode, always-show-buttons, always-show site name.
+- **Startup** — choose the startup site; optionally force a light/dark theme on launch.
+- **Scrolling** — touch scrolling, scroll acceleration, plus advanced smoothness & distance.
+- **Per-site** (Sites panel) — zoom, dark handling (Auto/Force/Off), and volume for each feed; expand/collapse all.
+- **Experimental** — multi-site display (2–4 feeds at once).
+- **Advanced** — content-width presets, width indicator, startup-theme override.
+- **Updates** — see your version and check for updates on demand.
+
+</details>
+
+---
+
+## 💬 Beta & feedback
+
+This is an early Beta — expect rough edges, and please share what you find. Bug reports, feature ideas, and screenshots are all welcome on the **[Issues](../../issues)** page. 🙏
+
+---
+
+<div align="center">
+
+<sub>The source code is maintained in a private repository. Releases here are built, signed, and published automatically from that source.</sub>
+
+<sub>Made with 🪟 + ☕</sub>
+
+</div>

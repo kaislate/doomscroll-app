@@ -11,7 +11,7 @@ A borderless, chromeless desktop widget that nests web feeds — Facebook, X, Re
 <br>
 
 ![Platform](https://img.shields.io/badge/Windows%20·%20macOS%20·%20Linux-2b7489?style=for-the-badge)
-![Release](https://img.shields.io/github/v/release/kaislate/inset-app?include_prereleases&label=beta&style=for-the-badge&color=8a4fe0)
+![Release](https://img.shields.io/github/v/release/kaislate/DoomScroll-app?include_prereleases&label=beta&style=for-the-badge&color=8a4fe0)
 ![Auto-update](https://img.shields.io/badge/auto--update-enabled-1877f2?style=for-the-badge)
 
 **[⬇️ Download the latest Beta](../../releases)**

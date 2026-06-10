@@ -2,6 +2,16 @@
 
 All notable changes to **Doom Scroll**. This project is in Beta. Dates are release dates.
 
+## 0.4.2 — 2026-06-10
+
+### Changed
+- **New app icon** 💀 — a skull with a double downward "endless scroll" chevron on
+  a deep purple → near-black gradient. The startup splash mark matches.
+
+### Fixed
+- The "update available" banner no longer shows a faint square corner over light
+  backgrounds (an outer drop-shadow was clipping to the window's square bounds).
+
 ## 0.4.1 — 2026-06-10
 
 ### Added

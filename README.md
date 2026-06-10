@@ -1,17 +1,17 @@
 <div align="center">
 
-<img src="docs/logo.png" width="132" alt="Inset logo">
+<img src="docs/logo.png" width="132" alt="Doom Scroll logo">
 
-# Inset
+# Doom Scroll
 
-### Your favorite feeds, *inset* into the desktop.
+### Every feed you love, in one tiny window — *doomscroll* in style. 🌀
 
 A borderless, chromeless desktop widget that nests web feeds — Facebook, X, Reddit, eBay — inside a soft neumorphic frame, so they read as **part of your desktop** rather than yet another window on top of it.
 
 <br>
 
 ![Platform](https://img.shields.io/badge/Windows%20·%20macOS%20·%20Linux-2b7489?style=for-the-badge)
-![Release](https://img.shields.io/github/v/release/kaislate/inset-app?include_prereleases&label=beta&style=for-the-badge&color=8a63d2)
+![Release](https://img.shields.io/github/v/release/kaislate/inset-app?include_prereleases&label=beta&style=for-the-badge&color=8a4fe0)
 ![Auto-update](https://img.shields.io/badge/auto--update-enabled-1877f2?style=for-the-badge)
 
 **[⬇️ Download the latest Beta](../../releases)**
@@ -21,12 +21,12 @@ A borderless, chromeless desktop widget that nests web feeds — Facebook, X, Re
 ---
 
 > [!NOTE]
-> **Inset is in Beta.** It updates itself — install once and new versions arrive automatically (with your OK). 🎉
+> **Doom Scroll is in Beta.** It updates itself — install once and new versions arrive automatically (with your OK). 🎉
 
-Inset sits quietly on your desktop: a transparent, rounded, neumorphic panel holding a live web feed. Move it, resize it, dim it, pin it on top, flip it to dark mode, run several feeds side-by-side, or melt the frame away entirely for an edge-to-edge view. It feels less like an app window and more like a little window *into* the desktop itself.
+Doom Scroll sits quietly on your desktop: a transparent, rounded, neumorphic panel holding a live web feed. Move it, resize it, dim it, pin it on top, flip it to dark mode, run several feeds side-by-side, or melt the frame away entirely for an edge-to-edge view. It feels less like an app window and more like a little window *into* the desktop itself.
 
 <div align="center">
-  <img src="docs/screenshot-window.png" width="420" alt="Inset framing a Reddit feed on the desktop">
+  <img src="docs/screenshot-window.png" width="420" alt="Doom Scroll framing a Reddit feed on the desktop">
 </div>
 
 ---
@@ -63,16 +63,16 @@ Inset sits quietly on your desktop: a transparent, rounded, neumorphic panel hol
 - **Hover-reveal controls** keep the panel clean until you need it (or pin the buttons on).
 
 ### 🎚️ Blend it into your desktop
-- **Frame opacity** and **whole-window opacity** sliders to make Inset as present — or as ghostly — as you like.
+- **Frame opacity** and **whole-window opacity** sliders to make Doom Scroll as present — or as ghostly — as you like.
 - **Pin on top** 📌, **lock position & size** 🔒, and neumorphic soft-shadow styling throughout.
 
 ### 🔄 Automatic updates *(new in Beta)*
-- Inset checks for new versions on launch and offers a tidy **Install / Later** prompt — or check anytime from **Settings → Updates**.
+- Doom Scroll checks for new versions on launch and offers a tidy **Install / Later** prompt — or check anytime from **Settings → Updates**.
 - Updates are **cryptographically signed** and verified before they're applied; the app downloads, installs, and relaunches itself.
 
 ### 🔒 Private by design
-- Inset is a thin frame around the **real** sites running in a local WebView — no middleman, no proxy, no account.
-- Your logins live in Inset's own local browser profile and simply persist between launches.
+- Doom Scroll is a thin frame around the **real** sites running in a local WebView — no middleman, no proxy, no account.
+- Your logins live in Doom Scroll's own local browser profile and simply persist between launches.
 
 ---
 
@@ -82,16 +82,16 @@ Grab the newest build from the **[Releases page](../../releases)**:
 
 | 🖥️ OS | 📦 Files |
 |---|---|
-| **Windows** | `Inset_x.y.z_x64-setup.exe` (installer) · `Inset_x.y.z_x64_en-US.msi` |
-| **macOS** | `Inset_x.y.z_aarch64.dmg` (Apple Silicon) |
+| **Windows** | `Doom Scroll_x.y.z_x64-setup.exe` (installer) · `Doom Scroll_x.y.z_x64_en-US.msi` |
+| **macOS** | `Doom Scroll_x.y.z_aarch64.dmg` (Apple Silicon) |
 | **Linux** | `.AppImage` · `.deb` · `.rpm` |
 
 > [!IMPORTANT]
 > Installers aren't code-signed for the OS yet, so **Windows SmartScreen** or **macOS Gatekeeper** may warn on first launch.
 > Windows: **More info → Run anyway**. macOS: **right-click → Open**.
-> *(Update packages **are** signed with Inset's own key and verified by the app — this notice is only about the OS-level installer signature.)*
+> *(Update packages **are** signed with Doom Scroll's own key and verified by the app — this notice is only about the OS-level installer signature.)*
 
-After your first install, you won't need this page again — Inset keeps itself up to date. ✅
+After your first install, you won't need this page again — Doom Scroll keeps itself up to date. ✅
 
 ---
 
@@ -100,21 +100,21 @@ After your first install, you won't need this page again — Inset keeps itself 
 <table>
   <tr>
     <td width="50%" align="center">
-      <img src="docs/screenshot-window.png" alt="Inset framing a feed"><br>
+      <img src="docs/screenshot-window.png" alt="Doom Scroll framing a feed"><br>
       <sub><b>The neumorphic frame</b> — a feed nested into the desktop</sub>
     </td>
     <td width="50%" align="center">
-      <img src="docs/screenshot-feed.png" alt="A live feed inside Inset"><br>
+      <img src="docs/screenshot-feed.png" alt="A live feed inside Doom Scroll"><br>
       <sub><b>Live feeds</b> — the real site, running right in the panel</sub>
     </td>
   </tr>
   <tr>
     <td width="50%" align="center">
-      <img src="docs/screenshot-settings.png" alt="Inset settings panel"><br>
+      <img src="docs/screenshot-settings.png" alt="Doom Scroll settings panel"><br>
       <sub><b>Settings</b> — opacity, theme, scrolling, startup &amp; updates</sub>
     </td>
     <td width="50%" align="center">
-      <img src="docs/screenshot-sites.png" alt="Inset per-site controls"><br>
+      <img src="docs/screenshot-sites.png" alt="Doom Scroll per-site controls"><br>
       <sub><b>Per-site controls</b> — volume, zoom &amp; dark mode for each feed</sub>
     </td>
   </tr>
@@ -124,7 +124,7 @@ After your first install, you won't need this page again — Inset keeps itself 
 
 ## 🚀 Quick start
 
-1. **Launch Inset** — a neumorphic panel appears with your starting feed.
+1. **Launch Doom Scroll** — a neumorphic panel appears with your starting feed.
 2. **Log in** to a site once; the session persists.
 3. **Hover** the panel to reveal the control strip:
 

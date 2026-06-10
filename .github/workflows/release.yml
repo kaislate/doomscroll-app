@@ -32,7 +32,7 @@ jobs:
       - name: Check out private source
         uses: actions/checkout@v4
         with:
-          repository: kaislate/inset
+          repository: kaislate/doomscroll
           token: ${{ secrets.SOURCE_REPO_TOKEN }}
           path: source
 

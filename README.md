@@ -10,7 +10,8 @@ A borderless, chromeless desktop widget that nests web feeds — Facebook, X, Re
 
 <br>
 
-![Platform](https://img.shields.io/badge/Windows%20·%20macOS%20·%20Linux-2b7489?style=for-the-badge)
+![Platform](https://img.shields.io/badge/Windows%20·%20macOS-2b7489?style=for-the-badge)
+![Linux](https://img.shields.io/badge/Linux-work%20in%20progress-c98a2b?style=for-the-badge)
 ![Release](https://img.shields.io/github/v/release/kaislate/doomscroll-app?include_prereleases&label=beta&style=for-the-badge&color=8a4fe0)
 ![Auto-update](https://img.shields.io/badge/auto--update-enabled-1877f2?style=for-the-badge)
 
@@ -90,12 +91,15 @@ Grab the newest build from the **[Releases page](../../releases)**:
 |---|---|
 | **Windows** | `Doom Scroll_x.y.z_x64-setup.exe` (installer) · `Doom Scroll_x.y.z_x64_en-US.msi` |
 | **macOS** | `Doom Scroll_x.y.z_aarch64.dmg` (Apple Silicon) |
-| **Linux** | `.AppImage` · `.deb` · `.rpm` |
+| **Linux** | 🚧 *work in progress — see note below* |
 
 > [!IMPORTANT]
 > Installers aren't code-signed for the OS yet, so **Windows SmartScreen** or **macOS Gatekeeper** may warn on first launch.
 > Windows: **More info → Run anyway**. macOS: **right-click → Open**.
 > *(Update packages **are** signed with Doom Scroll's own key and verified by the app — this notice is only about the OS-level installer signature.)*
+
+> [!NOTE]
+> **🐧 Linux is in progress.** Doom Scroll overlays each feed as a webview inside one window, and that positioning is currently broken on Linux (webkit2gtk) by an upstream Tauri limitation ([tauri#10420](https://github.com/tauri-apps/tauri/issues/10420)) — feeds stack as cards below the window instead of filling it. Linux builds are paused until the upstream fix lands. **Windows and macOS are the supported platforms for now.**
 
 After your first install, you won't need this page again — Doom Scroll keeps itself up to date. ✅
 
